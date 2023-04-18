@@ -73,5 +73,30 @@ body {
 
 .main {
     grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-areas:
+        "projects announcements"
+        "projects trending";
+    gap: 20px;
+    padding: 20px;
     background-color: rgb(226, 232, 240);
+}
+
+.main__section.projects {
+    grid-area: projects;
+}
+
+.main__section.announcements {
+    grid-area: announcements;
+}
+
+.main__section.trending {
+    grid-area: trending;
+}
+
+.main__section-title {
+    padding: 12px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
