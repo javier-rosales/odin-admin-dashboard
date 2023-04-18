@@ -19,7 +19,7 @@ body {
     position: relative;
     z-index: 10;
     background-color: rgb(238, 238, 238);
-    box-shadow: 0 1px 8px #aaa;
+    box-shadow: 0 1px 8px rgb(170, 170, 170);
 }
 
 .sidebar {
@@ -31,7 +31,7 @@ body {
     z-index: 20;
     padding: 30px;
     background-color: rgb(25, 146, 212);
-    box-shadow: 1px 0 3px #aaa;
+    box-shadow: 1px 0 3px rgb(170, 170, 170);
 }
 
 .sidebar__section {
