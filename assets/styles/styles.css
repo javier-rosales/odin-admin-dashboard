@@ -3,3 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    grid-template-rows: 200px 1fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main  ";
+}
+
+.header {
+    grid-area: header;
+    position: relative;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 8px #aaa;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    position: relative;
+    z-index: 20;
+    background-color: rgb(25, 146, 212);
+    box-shadow: 1px 0 3px #aaa;
+}
+
+.main {
+    grid-area: main;
+    background-color: rgb(226, 232, 240);
+}
