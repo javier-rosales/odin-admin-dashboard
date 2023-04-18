@@ -18,16 +18,53 @@ body {
     grid-area: header;
     position: relative;
     z-index: 10;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(238, 238, 238);
     box-shadow: 0 1px 8px #aaa;
 }
 
 .sidebar {
     grid-area: sidebar;
+    display: grid;
+    gap: 70px;
+    align-content: start;
     position: relative;
     z-index: 20;
+    padding: 30px;
     background-color: rgb(25, 146, 212);
     box-shadow: 1px 0 3px #aaa;
+}
+
+.sidebar__section {
+    display: grid;
+    gap: 20px;
+}
+
+.sidebar__item {
+    font-size: 1.2rem;
+}
+
+.sidebar__item a {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    gap: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.sidebar__item a:hover {
+    color: rgb(210, 210, 210);
+}
+
+.sidebar__item i {
+    justify-self: center;
+}
+
+.sidebar__item.title {
+    font-size: 2rem;
+}
+
+.sidebar__item.title a {
+    grid-template-columns: 50px 1fr;
 }
 
 .main {
