@@ -105,6 +105,13 @@ body {
     font-weight: 500;
 }
 
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    align-content: start;
+    gap: 25px;
+}
+
 .project {
     position: relative;
     padding: 30px 25px 30px 35px;
