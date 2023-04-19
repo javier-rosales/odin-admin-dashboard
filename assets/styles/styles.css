@@ -83,6 +83,11 @@ body {
     background-color: rgb(226, 232, 240);
 }
 
+.main__section {
+    display: grid;
+    gap: 20px;
+}
+
 .main__section.projects {
     grid-area: projects;
 }
@@ -96,7 +101,6 @@ body {
 }
 
 .main__section-title {
-    padding: 12px 0;
     font-size: 1.2rem;
     font-weight: 500;
 }
