@@ -75,6 +75,7 @@ body {
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 400px;
+    grid-template-rows: auto 1fr;
     grid-template-areas:
         "projects announcements"
         "projects trending";
