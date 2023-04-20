@@ -79,6 +79,7 @@ body {
         "projects announcements"
         "projects trending";
     gap: 20px;
+    align-items: start;
     align-content: start;
     padding: 20px;
     background-color: rgb(226, 232, 240);
@@ -86,7 +87,6 @@ body {
 
 .main__section {
     display: grid;
-    align-content: start;
     gap: 20px;
 }
 
