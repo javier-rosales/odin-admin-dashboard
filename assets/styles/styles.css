@@ -159,3 +159,17 @@ body {
     font-size: 1.3rem;
     color: rgb(34, 34, 34);
 }
+
+.announcements-panel > .separator {
+    height: 2px;
+    margin: 20px 0;
+    background-color: rgb(204, 204, 204);
+}
+
+.announcement__title {
+    font-weight: 500;
+}
+
+.announcement__description {
+    color: rgb(85, 85, 85);
+}
