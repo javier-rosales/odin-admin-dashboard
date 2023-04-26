@@ -74,7 +74,7 @@ body {
 .main {
     grid-area: main;
     display: grid;
-    grid-template-columns: 1fr 400px;
+    grid-template-columns: 1fr minmax(200px, 400px);
     grid-template-rows: auto 1fr;
     grid-template-areas:
         "projects announcements"
