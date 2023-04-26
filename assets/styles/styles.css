@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+input {
     font-family: "Roboto", sans-serif;
+}
+
+button {
+    cursor: pointer;
 }
 
 body {
@@ -20,10 +25,99 @@ body {
 
 .header {
     grid-area: header;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 25px;
+    align-items: center;
     position: relative;
     z-index: 10;
-    background-color: rgb(238, 238, 238);
+    padding: 20px 70px;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 1px 8px rgb(170, 170, 170);
+    color: rgb(34, 34, 34);
+}
+
+.search {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.search__icon {
+    font-size: 1.1rem;
+}
+
+.search__box {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(226, 232, 240);
+    font-size: 1rem;
+    color: rgb(34, 34, 34);
+}
+
+.profile-overview {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    font-size: 1.1rem;
+}
+
+.profile-overview a {
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+}
+
+.profile-name {
+    font-weight: 700;
+}
+
+.welcome {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+        "photo message     "
+        "photo profile-info";
+    column-gap: 25px;
+    row-gap: 8px;
+    font-weight: 700;
+}
+
+.welcome > .profile-photo {
+    grid-area: photo;
+    place-self: center;
+    font-size: 3rem;
+}
+
+.welcome > .welcome__message {
+    grid-area: message;
+    align-self: end;
+    font-size: .9rem;
+}
+
+.welcome > .profile-info {
+    grid-area: profile-info;
+    font-size: 1.3rem;
+}
+
+.quick-actions {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 25px;
+}
+
+.quick-action {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(25, 146, 212);
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
 }
 
 .sidebar {
