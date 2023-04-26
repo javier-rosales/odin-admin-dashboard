@@ -174,3 +174,31 @@ body {
 .announcement__description {
     color: rgb(85, 85, 85);
 }
+
+.trending-projects {
+    display: grid;
+    gap: 30px;
+}
+
+.trending-project {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-areas:
+        "logo user"
+        "logo name";
+    column-gap: 20px;
+}
+
+.trending-project__logo {
+    grid-area: logo;
+    place-self: center;
+    font-size: 1.5rem;
+}
+
+.trending-project__owner-user {
+    grid-area: user;
+}
+
+.trending-project__name {
+    grid-area: name;
+}
